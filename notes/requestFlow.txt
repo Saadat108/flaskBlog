@@ -1,0 +1,16 @@
+     ┌────────────────────────┐
+     │  GET /dashboard        │
+     └──────────┬─────────────┘
+                │
+        Flask reads cookie
+                │
+        Verify + Deserialize
+                │
+        user_id = 42
+                │
+     load_user(42) → User()
+                │
+        current_user = User
+                │
+           Route executes
+           

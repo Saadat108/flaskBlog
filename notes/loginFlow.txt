@@ -1,0 +1,15 @@
+     ┌───────────────────────┐
+     │  POST /login (user)     │
+     └──────────┬────────────┘
+                │
+                ▼
+      Flask-Login saves user_id
+          ↓
+   session['_user_id'] = 42
+          ↓
+   Flask serializes session
+          ↓
+   Set-Cookie: session="signed_data"
+          ↓
+     Browser stores cookie
+bhkbjkbhjighui
