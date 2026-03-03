@@ -8,7 +8,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "blog.py"
+      "dest": "microblog.py"
     }
   ]
 }
